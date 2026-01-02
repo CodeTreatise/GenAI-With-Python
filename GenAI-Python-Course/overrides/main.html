@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block announce %}
+  🎉 <strong>New:</strong> 17 new lessons added! Check out Ethics & Bias, LangSmith Observability, and more.
+  <a href="overview/">Learn more →</a>
+{% endblock %}
+
+{% block content %}
+  <button class="sidebar-toggle" onclick="document.body.classList.toggle('sidebar-hidden'); this.innerHTML = document.body.classList.contains('sidebar-hidden') ? '☰' : '✕';" title="Toggle Sidebar">☰</button>
+  {{ super() }}
+{% endblock %}

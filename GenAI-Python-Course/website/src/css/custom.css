@@ -1,0 +1,217 @@
+/**
+ * GenAI Python Course - Custom Theme
+ * Using indigo/purple gradient for AI theme
+ */
+
+:root {
+  /* Indigo color palette */
+  --ifm-color-primary: #4f46e5;
+  --ifm-color-primary-dark: #4338ca;
+  --ifm-color-primary-darker: #3730a3;
+  --ifm-color-primary-darkest: #312e81;
+  --ifm-color-primary-light: #6366f1;
+  --ifm-color-primary-lighter: #818cf8;
+  --ifm-color-primary-lightest: #a5b4fc;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(79, 70, 229, 0.1);
+  
+  /* Hero gradient background */
+  --ifm-hero-background-color: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+/* Dark mode - purple accent */
+[data-theme='dark'] {
+  --ifm-color-primary: #818cf8;
+  --ifm-color-primary-dark: #6366f1;
+  --ifm-color-primary-darker: #4f46e5;
+  --ifm-color-primary-darkest: #4338ca;
+  --ifm-color-primary-light: #a5b4fc;
+  --ifm-color-primary-lighter: #c7d2fe;
+  --ifm-color-primary-lightest: #e0e7ff;
+  --docusaurus-highlighted-code-line-bg: rgba(129, 140, 248, 0.2);
+}
+
+/* Hero section gradient */
+.hero--primary {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #ec4899 100%);
+}
+
+[data-theme='dark'] .hero--primary {
+  background: linear-gradient(135deg, #312e81 0%, #4c1d95 50%, #831843 100%);
+}
+
+/* Navbar styling */
+.navbar {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .navbar {
+  background-color: #1e1b4b;
+}
+
+/* Sidebar categories */
+.menu__link--sublist-caret {
+  font-weight: 600;
+}
+
+/* Code blocks */
+.prism-code {
+  border-radius: 8px;
+}
+
+/* Tables */
+table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  background-color: var(--ifm-color-primary-lightest);
+}
+
+[data-theme='dark'] th {
+  background-color: var(--ifm-color-primary-darkest);
+}
+
+/* Buttons */
+.button--lg {
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Announcement bar */
+div[class*='announcementBar'] {
+  font-weight: 500;
+}
+
+/* Footer */
+.footer--dark {
+  background: linear-gradient(180deg, #1e1b4b 0%, #0f0d24 100%);
+}
+
+/* Mermaid diagrams - visibility & contrast fixes */
+.mermaid {
+  background: transparent !important;
+}
+
+/* Ensure node text is readable on light fills (both themes) */
+.mermaid .node rect,
+.mermaid .node polygon,
+.mermaid .node circle,
+.mermaid .node ellipse {
+  stroke-width: 1.5px;
+}
+
+/* Subgraph labels: ensure visible in both themes */
+.mermaid .cluster-label .nodeLabel,
+.mermaid .cluster-label {
+  font-weight: 600;
+}
+
+/* Light mode: dark text on light fills */
+[data-theme='light'] .mermaid .nodeLabel,
+[data-theme='light'] .mermaid .edgeLabel,
+[data-theme='light'] .mermaid .cluster-label {
+  color: #1c1e21 !important;
+  fill: #1c1e21 !important;
+}
+
+/* Dark mode: ensure inline-styled light fills get dark text */
+[data-theme='dark'] .mermaid .node .nodeLabel {
+  fill: currentColor !important;
+}
+
+/* Dark mode: subgraph/cluster labels visible */
+[data-theme='dark'] .mermaid .cluster-label .nodeLabel {
+  fill: #e3e3e3 !important;
+}
+
+/* Dark mode: edge labels readable */
+[data-theme='dark'] .mermaid .edgeLabel {
+  background-color: #242526 !important;
+  color: #e3e3e3 !important;
+}
+
+/* Flowchart node text color fallback for inline styles */
+.mermaid .flowchart-label .nodeLabel {
+  text-shadow: none;
+}
+
+/* Ensure gitGraph commit labels are visible */
+.mermaid .commit-label {
+  font-size: 12px;
+}
+
+/* TOC readability: allow long headings to wrap (no horizontal overflow) */
+.theme-doc-toc-desktop .table-of-contents__link {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Docs layout: allow collapsing sidebars & widen content for diagrams */
+@media (min-width: 997px) {
+  /* The main doc content column gets a CSS-module class like `docItemCol_*` */
+  [class*='docItemCol'] {
+    max-width: 85% !important;
+  }
+
+  /* The TOC column is the sibling `col col--3` right after the content column */
+  [class*='docItemCol'] + .col.col--3 {
+    --ifm-col-width: 15%;
+  }
+
+  /* Right-side TOC collapse toggle (theme override in src/theme/TOC) */
+  .tocCollapseWrapper {
+    position: sticky;
+    top: calc(var(--ifm-navbar-height) + var(--ifm-spacing-vertical));
+    max-height: calc(100vh - var(--ifm-navbar-height) - (2 * var(--ifm-spacing-vertical)));
+    overflow: auto;
+    padding-top: 0.25rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tocCollapseButton {
+    align-self: flex-start;
+    width: 28px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: var(--ifm-global-radius);
+    border: 1px solid var(--ifm-color-emphasis-300);
+    background: var(--ifm-background-surface-color);
+    color: var(--ifm-font-color-base);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+  }
+
+  .tocCollapseButton:hover {
+    background: var(--ifm-hover-overlay);
+  }
+
+  .tocCollapseIcon {
+    font-size: 18px;
+    line-height: 1;
+    user-select: none;
+  }
+
+  /* When TOC is collapsed: shrink the TOC column to a slim handle and expand content */
+  html[data-doc-toc-collapsed='true'] [class*='docItemCol'] {
+    max-width: 100% !important;
+  }
+
+  html[data-doc-toc-collapsed='true'] [class*='docItemCol'] + .col.col--3 {
+    --ifm-col-width: calc(var(--doc-sidebar-hidden-width) + 24px);
+  }
+}
+
+/* Feature cards hover effect */
+.col--4:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}

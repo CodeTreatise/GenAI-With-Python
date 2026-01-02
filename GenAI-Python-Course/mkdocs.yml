@@ -1,0 +1,235 @@
+# ========================================
+# GenAI Python Course - MkDocs Configuration
+# Beautiful UI with Material Theme
+# ========================================
+
+site_name: GenAI Python Course
+site_description: Master Generative AI with Python - From Basics to Production
+site_author: GenAI Course Team
+site_url: https://yoursite.github.io/genai-python-course/
+
+# Repository
+repo_name: genai-python-course
+repo_url: https://github.com/yourusername/genai-python-course
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2024-2026 GenAI Python Course
+
+# Theme Configuration
+theme:
+  name: material
+  language: en
+  
+  # Color Palette - Beautiful Blue/Teal Theme
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  # Font
+  font:
+    text: Inter
+    code: JetBrains Mono
+  
+  # Features for beautiful UI
+  features:
+    # Navigation - Tabs layout
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    
+    # Table of Contents
+    - toc.follow
+    
+    # Search
+    - search.suggest
+    - search.highlight
+    - search.share
+    
+    # Content
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+  
+  # Icons
+  icon:
+    logo: material/robot-happy
+    repo: fontawesome/brands/github
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      lang: en
+
+# Markdown Extensions
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: On this page
+      toc_depth: 3
+  
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Extra CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Extra JavaScript
+extra_javascript:
+  - javascripts/sidebar-toggle.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Extra configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername
+      name: GitHub
+  generator: false
+
+# Navigation - Auto-generated from actual files
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Course Overview: overview.md
+    - Prerequisites: prerequisites.md
+    - Setup Guide: setup.md
+  
+  - "📘 Module 01 - Linux & Terminal":
+    - Overview: Module-01/README.md
+    - "00 The Remote Server Problem": Module-01/Lesson-01-00-The-Remote-Server-Problem.md
+    - "01 What IS a Shell": Module-01/Lesson-01-01-What-IS-a-Shell.md
+    - "02 The Filesystem Under the Hood": Module-01/Lesson-01-02-The-Filesystem-Under-the-Hood.md
+    - "03 Filesystem Diagram": Module-01/Lesson-01-03-Filesystem-Diagram.md
+    - "04 Navigation - Where Am I": Module-01/Lesson-01-04-Navigation-Where-Am-I.md
+    - "05 Navigation - What's Here": Module-01/Lesson-01-05-Navigation-Whats-Here.md
+    - "06 Navigation - Moving Around": Module-01/Lesson-01-06-Navigation-Moving-Around.md
+    - "07 Terminal Q&A": Module-01/Lesson-01-07-Terminal-QA.md
+    - "08 The File Problem": Module-01/Lesson-01-08-The-File-Problem.md
+    - "09 Creating Things": Module-01/Lesson-01-09-Creating-Things.md
+    - "10 Destroying Things Carefully": Module-01/Lesson-01-10-Destroying-Things-Carefully.md
+    - "11 Moving and Copying Under the Hood": Module-01/Lesson-01-11-Moving-and-Copying-Under-the-Hood.md
+    - "12 Viewing Files": Module-01/Lesson-01-12-Viewing-Files.md
+    - "13 Editing Files from the Terminal": Module-01/Lesson-01-13-Editing-Files-from-the-Terminal.md
+    - "14 File Operations Q&A": Module-01/Lesson-01-14-File-Operations-QA.md
+    - "15 The Permissions Problem": Module-01/Lesson-01-15-The-Permissions-Problem.md
+    - "16 Understanding Permissions": Module-01/Lesson-01-16-Understanding-Permissions.md
+    - "17 Changing Permissions with chmod": Module-01/Lesson-01-17-Changing-Permissions-with-chmod.md
+    - "18 Changing Ownership with chown": Module-01/Lesson-01-18-Changing-Ownership-with-chown.md
+    - "19 Permissions Q&A and sudo Deep Dive": Module-01/Lesson-01-19-Permissions-QA-and-sudo-Deep-Dive.md
+    - "20 The Remote Problem": Module-01/Lesson-01-20-The-Remote-Problem.md
+    - "21 SSH - The Secure Tunnel": Module-01/Lesson-01-21-SSH-The-Secure-Tunnel.md
+    - "22 SSH Keys - Passwordless and Secure": Module-01/Lesson-01-22-SSH-Keys-Passwordless-and-Secure.md
+    - "23 File Transfer - scp and rsync": Module-01/Lesson-01-23-File-Transfer-scp-and-rsync.md
+    - "24 Environment Variables and PATH": Module-01/Lesson-01-24-Environment-Variables-and-PATH.md
+    - "25 Essential Utilities": Module-01/Lesson-01-25-Essential-Utilities.md
+    - "26 Shell Scripting for AI": Module-01/Lesson-01-26-Shell-Scripting-AI.md
+  
+  - "📗 Module 02 - Git & Version Control":
+    - Overview: Module-02/README.md
+  
+  - "📙 Module 03 - Python Core":
+    - Overview: Module-03/README.md
+  
+  - "📕 Module 04 - PostgreSQL":
+    - Overview: Module-04/README.md
+  
+  - "📓 Module 05 - Docker":
+    - Overview: Module-05/README.md
+  
+  - "📒 Module 06 - FastAPI":
+    - Overview: Module-06/README.md
+  
+  - "📔 Module 07 - LLM APIs":
+    - Overview: Module-07/README.md
+  
+  - "📚 Module 08 - RAG":
+    - Overview: Module-08/README.md
+  
+  - "📖 Module 09 - LangGraph":
+    - Overview: Module-09/README.md
+  
+  - "🔧 Module 10 - AWS Deployment":
+    - Overview: Module-10/README.md
+  
+  - "📊 Module 11 - LLMOps":
+    - Overview: Module-11/README.md
+  
+  - "🗄️ Module 12 - Redis":
+    - Overview: Module-12/README.md
+  
+  - "🔍 Module 13 - Celery":
+    - Overview: Module-13/README.md
+  
+  - "🎯 Module 14 - pgvector":
+    - Overview: Module-14/README.md
+  
+  - "☁️ Module 15 - Kubernetes":
+    - Overview: Module-15/README.md
+  
+  - "🚀 Module 16 - OAuth":
+    - Overview: Module-16/README.md
+  
+  - Resources:
+    - Glossary: glossary.md
+    - FAQ: faq.md
+    - Contributing: contributing.md
