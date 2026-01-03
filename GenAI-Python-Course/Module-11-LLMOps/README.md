@@ -7,10 +7,11 @@
 | Section | Topics | Lessons |
 |:--------|:-------|:-------:|
 | A | Security & Safety | 8 |
+| A+ | Enterprise Integration | 1 |
 | B | Evaluation | 7 |
 | C | Token Economics | 5 |
 | D | Observability | 5 |
-| **Total** | | **25** |
+| **Total** | | **26** |
 
 ## 🧠 The LLMOps Mental Model
 
@@ -137,6 +138,14 @@ flowchart TD
 | 11.6 | Rate Limiting | Token budgets, abuse prevention |
 | 11.7 | Security Q&A | Recap |
 
+### Section A+: Enterprise Integration (Bridge)
+
+| # | Lesson | Focus |
+|:-:|:-------|:------|
+| 11.7B | Enterprise Tool Calling | RBAC, Audit Logging, Legacy DB Integration |
+
+> **Why This Matters**: Security lessons teach the pieces. This lesson shows how to wire them into real enterprise systems — government portals, legacy MSSQL/.NET backends, 1000+ table databases — safely.
+
 ### Section B: Evaluation (7 lessons)
 
 | # | Lesson | Focus |
@@ -186,6 +195,7 @@ You'll be able to:
 | Skill | Capability |
 |-------|------------|
 | **Secure** | Defend against prompt injection, filter harmful content |
+| **Integrate** | Wire AI into legacy systems with RBAC, scope enforcement, audit trails |
 | **Evaluate** | Measure RAG quality with Ragas, set up LLM-as-Judge |
 | **Budget** | Implement semantic caching, enforce token limits |
 | **Monitor** | Trace every request, debug production issues |

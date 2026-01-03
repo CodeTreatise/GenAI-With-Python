@@ -391,6 +391,7 @@
 | 11.5 | Guardrails Implementation | ✅ | ⬜ |
 | 11.6 | Rate Limiting | ✅ | ⬜ |
 | 11.7 | Security Q&A | ✅ | ⬜ |
+| 11.7B | Enterprise Tool Calling (RBAC, Audit & Legacy) | ✅ | ⬜ |
 | 11.8 | The Quality Problem (Intro) | ✅ | ⬜ |
 | 11.9 | RAG Evaluation Metrics | ✅ | ⬜ |
 | 11.10 | Ragas Framework | ✅ | ⬜ |
@@ -448,6 +449,7 @@
 | Today | Generated Lessons 3.0-3.7 | Python | Section A: Python Execution Model |
 | Today | Generated Lessons 3.8-3.15 | Python | Section B: Collections |
 | Today | Generated Lessons 3.16-3.20 | Python | Section C: Control Flow |
+| 2026-01-03 | Generated Lesson 11.7B | GitHub Copilot | Enterprise tool calling: RBAC, audit, legacy integration |
 | Today | Generated Lessons 3.21-3.25 | Python | Section D: Functions |
 | Today | Generated Lessons 3.26-3.31 | Python | Section E: Classes & OOP |
 | Today | Generated Lessons 3.32-3.35 | Python | Section F: Error Handling & Files |
