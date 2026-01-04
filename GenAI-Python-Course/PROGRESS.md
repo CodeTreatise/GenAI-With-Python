@@ -391,7 +391,7 @@
 | 11.5 | Guardrails Implementation | ✅ | ⬜ |
 | 11.6 | Rate Limiting | ✅ | ⬜ |
 | 11.7 | Security Q&A | ✅ | ⬜ |
-| 11.7B | Enterprise Tool Calling (RBAC, Audit & Legacy) | ✅ | ⬜ |
+| 11.7B | Enterprise Tool Calling (RBAC, Audit & Legacy) | ✅ | ✅ |
 | 11.8 | The Quality Problem (Intro) | ✅ | ⬜ |
 | 11.9 | RAG Evaluation Metrics | ✅ | ⬜ |
 | 11.10 | Ragas Framework | ✅ | ⬜ |

@@ -400,6 +400,16 @@ async def chat(request: ChatRequest):
 
 ---
 
+## 🏢 Enterprise Integration (Bridge Lesson)
+
+Before moving to Evaluation, if you're adding AI to a **legacy enterprise system** (government portals, large MSSQL/.NET backends, 1000+ tables), see:
+
+> **[Lesson 11.7B: Enterprise Tool Calling — RBAC, Audit & Legacy Integration](./Lesson-07B-Enterprise-Tool-Calling-RBAC-Audit-Legacy.md)**
+>
+> Covers: scoped tools, RBAC enforcement in code, audit logging, Text-to-SQL safeguards, and decision trees for enterprise AI.
+
+---
+
 ## 🚀 What's Next?
 
 Section B covers **Evaluation** - how to measure if your LLM is working correctly:
