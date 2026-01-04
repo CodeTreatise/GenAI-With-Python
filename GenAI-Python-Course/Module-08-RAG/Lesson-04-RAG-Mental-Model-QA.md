@@ -250,7 +250,13 @@ Without looking, answer these questions:
 
 ---
 
-## 📚 Further Reading
+## � What's Next?
+
+**Lesson 5**: [The Search Problem](./Lesson-05-The-Search-Problem.md) - Why keyword search isn't enough for RAG.
+
+---
+
+## �📚 Further Reading
 
 - [RAG is Dead? Long Live RAG!](https://www.pinecone.io/learn/advanced-rag-techniques/) - Advanced patterns
 - [Evaluating RAG Systems](https://www.trulens.org/trulens_explain/getting_started/quickstarts/quickstart/) - Metrics and evaluation

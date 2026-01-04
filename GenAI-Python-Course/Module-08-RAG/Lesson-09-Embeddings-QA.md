@@ -314,7 +314,13 @@ Answer without looking:
 
 ---
 
-## 📚 Further Reading
+## � What's Next?
+
+**Lesson 10**: [The Manual Way](./Lesson-10-The-Manual-Way.md) - Build RAG from scratch before using frameworks.
+
+---
+
+## �📚 Further Reading
 
 - [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard) - Compare embedding models
 - [t-SNE Explained](https://distill.pub/2016/misread-tsne/) - Visualization techniques

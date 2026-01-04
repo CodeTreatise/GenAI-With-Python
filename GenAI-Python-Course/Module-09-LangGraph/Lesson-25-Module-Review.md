@@ -290,6 +290,8 @@ You'll deploy your agent to the cloud:
 - API Gateway for public access
 - CI/CD with GitHub Actions
 
+> 💼 **Enterprise Security**: When your agents call tools in production, see [Enterprise Tool Calling: RBAC, Audit & Legacy](../Module-11-LLMOps/Lesson-07B-Enterprise-Tool-Calling-RBAC-Audit-Legacy.md) for RBAC patterns, audit logging, and Text-to-SQL safeguards.
+
 ---
 
 ## 📚 Module 9 Resources

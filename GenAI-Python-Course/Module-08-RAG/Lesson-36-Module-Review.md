@@ -375,3 +375,5 @@ Module 8: RAG - The Hard Parts ✅
 ```
 
 **Next**: [Module 9: LangGraph - Agentic Systems](../Module-09-LangGraph/README.md)
+
+> 📊 **Production RAG**: For evaluation metrics, guardrails, and security in production RAG systems, see [Module 11: LLMOps](../Module-11-LLMOps/README.md).
